@@ -1,0 +1,7 @@
+{
+  "home": {
+    "title": "Book shop",
+    "total": "There are {{counter}} books in the list",
+    "buttonText": "Refresh button"
+  }
+}
