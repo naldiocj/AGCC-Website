@@ -18,7 +18,9 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="/">AGCC</a>
+        <a class="navbar-brand" href="/">
+          <img src="assets/images/promo.png" alt="" style="width: 80px;">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,13 +32,24 @@
               <a class="nav-link" href="/">Home</a></li>
 
             <li class="nav-item {{#if activeAbout }} active {{/if}}">
-              <a class="nav-link" href="/sobre-nos">Sobre Nós</a>
+              <a class="nav-link" href="/sobre-nos">Quem Somos</a>
             </li>
 
             <li class="nav-item {{#if activeServices }} active {{/if}}"><a class="nav-link"
                 href="/areas-de-consultorias">Serviços</a></li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Publicações
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Artigos e pareceres</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Legislação</a>
+              </div>
+            </div>
             <li class="nav-item {{#if activePortfolio }} active {{/if}}"><a class="nav-link"
-                href="/portfolio">Portfolio</a></li>
+                href="/portfolio">Notícias</a></li>
             <li class="nav-item {{#if activeContacts }} active {{/if}}">
 
               <a class="nav-link" href="/contactos">Contactos</a></li>
