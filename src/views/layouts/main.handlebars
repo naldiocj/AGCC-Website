@@ -76,7 +76,7 @@
   <footer>
     <div class="container">
       <p>
-        &copy; Copyright <span class="year"></span>. 2020 - Todos os direitos reservados
+        ©AGCC.<span class="year"></span> – Todos os Direitos Reservados.
       </p>
     </div>
   </footer>
@@ -93,10 +93,7 @@
     crossorigin="anonymous"></script>
   <script src="assets/js/lightbox.min.js"></script>
   <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
+    document.querySelector('.year').innerHTML = `${new Date().getFullYear}`
   </script>
 </body>
 
