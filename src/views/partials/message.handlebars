@@ -1,0 +1,59 @@
+<style>
+  .alert_msg {
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+    text-align: center;
+    margin-right: 50px;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+
+
+  }
+
+  .bg-success {
+    background-color: #28A745;
+  }
+
+  .bg-danger {
+    background-color: #DC3545;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .bg-danger {
+    background-color: red;
+  }
+</style>
+<script>
+
+  function show(id) {
+    const divEl = document.querySelector(id)
+    divEl.style.display = "block"
+    setTimeout(() => {
+      divEl.style.display = "none"
+    }, 2000)
+  }
+
+</script>
+{{#if success_msg }}
+<div id="success_msg" class="text-white bg-success alert_msg ">{{ success_msg }}</div>
+<script>
+  show("#success_msg")
+</script>
+{{else if error_msg}}
+<div id="error_msg" class="text-white bg-danger alert_msg ">{{ error_msg }}</div>
+<script>
+  show("#error_msg")
+</script>
+{{else if error}}
+
+<div id="error" class="text-white bg-danger alert_msg ">{{ error }}</div>
+<script>
+  show("#error")
+</script>
+{{/if}}

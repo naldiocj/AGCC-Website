@@ -2,48 +2,22 @@
   <div class="container">
     <h1 class="text-center text-uppercase title-1">Quem Somos</h1>
     <div class="row flex-center">
-      <div class="col-md-" style="">
-        <img class="rounded-img rotate" src="/assets/images/AGCC.png" alt="" style="width: 550px; height: 440px;float:left;margin-right:10px">
-      
-        <p class="">
-          <strong>AGCC CONSULTORIA LDA</strong>, é uma empresa de consultoria empresarial, que oferece apoio às
-          empresas, e
-          que une uma equipa
-          de profissionais diferenciados e capacitados, para atender às actuais necessidades de consultoria em gestão
-          dos
-          seus
-          clientes.
-        </p>
+      <div class="col-md-12 col-sm-12" style="">
+        <img class="rounded-img rotate" src="assets/uploads/{{agcc.photo}}" alt=""
+          style="width: 550px; height: 440px;float:left;margin-right:10px">
 
-        <p class="">Conscientes dos desafios enfrentados pelas empresas nos dias de hoje para potencializar os seus
-          recursos humanos e
-          incrementar os recursos financeiros, a <strong>AGCC CONSULTORIA LDA</strong> oferece serviços especializados
-          tendo
-          como objectivo
-          auxiliar as empresas a reduzir custos, aumentar os lucros e criar estratégias de crescimento, para a melhoria
-          contínua dos modelos de gestão de médio e longo prazo.</p>
-
-        <p><span>AGCC CONSULTORIA LDA</span> possui um portifólio que a torna especializada na prestação de
-          serviços para empresas, fundações, associações e particulares com sede em Angola e no
-          estrangeiro. A experiência comprovada em matéria de consultoria tem sido acompanhada com
-          novos serviços no apoio de pequenas, médias e grandes empresas no domínio do investimento
-          privado, auditoria e comércio geral.</p>
-
-        <p>
-          AGCC CONSULTORIA LDA tem como objectivos estratégicos de curto prazo assumir uma
-          posição privilegiada no domínio do investimento privado em todo o território nacional,
-          constituindo-se como empresa sólida, criativa e lucrativa; a médio prazo, assumir posição
-          privilegiada no domínio do investimento privado em todo o território nacional e a longo prazo ser
-          referência entre as empresas nacionais pelo volume de negócios e investimentos em empresas em
-          mercados internacionais.
-        </p>
+        {{{agcc.description}}}
 
       </div>
     </div>
   </div>
 </div>
 
-
+<style>
+  .cards {
+    display: flex;
+  }
+</style>
 <div id="mission">
   <div class="container">
     <div class="row">
@@ -52,26 +26,37 @@
       </div>
     </div>
     <div class="cards">
-      <div class="card-box">
-        <h3>Missão</h3>
-        <p class="text-center">Prestar serviços de excelência no domínio da corporate governance e business intelligence
-          apresentando-se
-          como parceiro credível no domínio do outsourcing</p>
-      </div>
-      <div class="card-box">
-        <h3>Visão</h3>
-        <p class="text-center">Constituir-se numa referência de empresa de consultoria de projectos empresariais
-          inovadores, servindo de
-          plataforma para a integração de investimento em projectos públicos e privados</p>
-      </div>
+      <div class="row bg-light">
+        <div class="col-12 ">
+          <div class="card-box">
+            <h3>Missão</h3>
+            <p class="text-center">
+              {{agcc.mission}}
+            </p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card-box">
+            <h3>Visão</h3>
+            <p class="text-center">
+              {{agcc.eyesight}}
+            </p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card-box">
+            <h3>Valores</h3>
+            <p class="text-center">
+              {{agcc.values}}
+            </p>
+          </div>
+        </div>
 
-      <div class="card-box">
-        <h3>Valores</h3>
-        <p class="text-center">Compromisso com o sucesso empresarial, através da associação entre a satisfação do
-          cliente, a eficiência e a adopção de boas práticas.</p>
       </div>
     </div>
+
   </div>
+</div>
 </div>
 
 {{!-- <div id="objectivs">
@@ -207,46 +192,21 @@
     <div class="box-center">
       <h2 class="text-center text-uppercase title-1">Equipa de Trabalho</h2>
       <p class="text-center">
-        AGCC CONSULTORIA LDA desenvolve o seu modelo de consultoria tendo como objectivo principal a melhoria dos
-        processos
-        de
-        gestão, visando maior produtividade e competitividade para a empresa, prestando serviços nas seguintes áreas
+        {{office.team}}
       </p>
     </div>
 
     <div class="members" style="background-color: #333;">
+      {{#each teams}}
       <div class="member">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwpAogMoNtRXWclyp4-QNqW7fePTeDOcIlUg&usqp=CAU"
-          alt="Avatar">
-        <span>Nome: Rosimeiro Alaerson Uliengue</span>
-        <span><strong>Director Executivo | Executive Manager</span></strong>
-        <span>Licenciado em Gestão de Projectos</span>
-        <span>Email: rosimeiro.uliengue@agcc.co.ao</span>
+        <img src="assets/uploads/{{this.photo}}" alt="Avatar">
+        <span>Nome: {{this.name}}</span>
+        <span><strong>{{this.role}}</span></strong>
+        <span>{{this.degree}}</span>
+        <span>Email: {{this.email}}</span>
       </div>
-      <div class="member">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwpAogMoNtRXWclyp4-QNqW7fePTeDOcIlUg&usqp=CAU"
-          alt="Avatar">
-        <span>Nome: Rosária Almeida Pereira</span>
-        <span><strong>Secretária Executiva | Executive Manager</strong></span>
-        <span>Licenciada em Gestão de Recursos Humanos</span>
-        <span>rosaria.pereira@agcc.co.ao</span>
-      </div>
-      <div class="member">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwpAogMoNtRXWclyp4-QNqW7fePTeDOcIlUg&usqp=CAU"
-          alt="Avatar">
-        <span>Nome: Flávio da Conceição Juliana Putu</span>
-        <span><strong>Consultor | Consultant</strong></span>
-        <span>Licenciado em Direito</span>
-        <span>flavio.putu@agcc.co.ao</span>
-      </div>
-      <div class="member">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwpAogMoNtRXWclyp4-QNqW7fePTeDOcIlUg&usqp=CAU"
-          alt="Avatar">
-        <span>Nome: Manda Manuela Canguezeze</span>
-        <span><strong>Consultora | Consultant</strong></span>
-        <span>Licenciada em Direito</span>
-        <span>manda.canguezeze@agcc.co.ao</span>
-      </div>
+      {{/each}}
+
     </div>
   </div>
 </div>

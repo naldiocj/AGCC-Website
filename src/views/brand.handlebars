@@ -1,0 +1,23 @@
+<div id="areas-home">
+  <div class="container">
+    <h2>Marcas</h2>
+
+    <div class="portfolios">
+
+      {{#each brands}}
+      <div class="portfolio">
+        <a href="/product/{{this._id}}">
+          <img src="assets/uploads/{{this.photo}}" width="350" height="200" alt="Avatar" />
+        </a>
+        <span style="font-weight: bold;font-size: 18px;">{{this.name}}</span>
+        <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt aliquam quasi expedita? Eum enim
+          placeat ipsum cupiditate ipsa sed?</p>
+        <a href="#" class="btn read-more">Leia mais...</a href="#">-->
+      </div>
+      {{/each }}
+    </div>
+
+
+  </div>
+</div>
+</div>

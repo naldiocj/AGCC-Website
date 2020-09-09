@@ -6,58 +6,58 @@
 
 <div id="contact-home" class="pt-30">
   <div class="container">
-    <h2 class="text-left pl-3">Contactos</h2>
-    <div class="columns">
-      <div class="col">
-        <form action="">
-          <div>
-            <label for="">Nome Completo</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Assunto</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Nº de Telefone</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Mensagem</label>
-            <textarea class="form-control" rows="8" maxlength="432"></textarea>
-          </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-left pl-3">Contactos</h2>
+        <div class="columns">
+          <div class="col">
+            <form action="/admin/contacts" method="POST">
+              <div>
+                <label for="">Nome Completo</label>
+                <input type="text" name="name" placeholder="Nome Completo" class="form-control">
+              </div>
+              <div>
+                <label for="">E-mail</label>
+                <input type="email" name="email" placeholder="E-mail" class="form-control">
+              </div>
+              <div>
+                <label for="">Assunto</label>
+                <input type="text" placeholder="Assunto" name="subject" class="form-control">
+              </div>
+              <div>
+                <label for="">Nº de Telefone</label>
+                <input type="tel" name="tel" placeholder="Telefone" class="form-control">
+              </div>
+              <div>
+                <label for="">Mensagem</label>
+                <textarea name="message" class="form-control" rows="8" maxlength="432"></textarea>
+              </div>
 
-          <div class="action">
-            <button class="btn btn-primary">Enviar</button>
+              <div class="action">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div class="col">
-        <span>
-          <i class="far fa-calendar-alt"></i>
-          Segunda a Sexta-Feira – das 07h30 as 15h30
-        </span>
-        <span>
-          <i class="fas fa-map-marker"></i>
-          (Sede) Rua Kwame Nkrumah n.o 3/5, Maianga, Luanda
-        </span>
-        <span class="flex-normal">
-          <i class="fas fa-building"></i>
-          <span>(Escritório) Condomínio do Vale dos Pássaros, Prédio Tucano Apt. n.º 51, R/C
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talatona, Luanda</span>
-        </span>
-        <span>
-          <i class="fas fa-phone-alt"></i>
-          (Call center) 222734178 | 928268366
-        </span>
-        <span>
-          <i class="fas fa-envelope"></i>
-          E-mail: geral@agcc.co.ao
-        </span>
+        </div>
+        <div class="col-md-6">
+          <div class="col">
+            <span>
+              <i class="far fa-calendar-alt"></i>{{office.serviceTime}}
+            </span>
+            <span>
+              <i class="fas fa-map-marker"></i>{{office.location}}
+            </span>
+            <span class="flex-normal">
+              <i class="fas fa-building"> </i>
+              <span>{{office.office}}
+              </span>
+            </span>
+            <span><i class="fas fa-phone-alt"></i>{{office.tel}}
+            </span><span><i class="fas fa-envelope"></i>E-mail: {{office.email}}</span>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

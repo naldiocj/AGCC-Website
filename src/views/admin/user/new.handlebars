@@ -1,0 +1,65 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="box-body">
+            <h4>Adicionar usuário</h4>
+            <form role="form" method="POST" enctype="multipart/form-data" action="/admin/users">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nome *</label>
+                  <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail *</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Senha *</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputEmail1"
+                    placeholder="Senha">
+                </div>
+                <div class="form-group">
+                  <label for="">
+                    Administrador:
+                  </label>
+                  <div class="checkbox">
+                    <label>
+                      <input name="admin" value="true" type="checkbox"> sim ?
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputFile">Imagem</label>
+                  <input type="file" multiple name="photo" id="exampleInputFile">
+                </div>
+                <div class="box-footer">
+                  <div class="form-group d-flex justify-content-between">
+                    <a href="/admin/users" class="btn btn-default pull-left">Cancelar</a>
+                    <button type="submit" class="btn btn-primary pull-right">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+</section>
+
+
+{{!-- <script>
+  $(document).Toasts('create', {
+    title: 'Toast Title',
+    body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+  })
+</script> --}}

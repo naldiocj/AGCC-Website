@@ -1,0 +1,63 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Parceiros
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Admin</a></li>
+    <li class="active">Partner</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="/admin/partner/new" class="btn btn-default" style="margin-bottom: 20px;">Adicionar</a>
+      <div class="box">
+        <!-- /.box-header -->
+        <div class="box-body">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Imagem</th>
+                <th>Atualizar</th>
+                <th>Remover</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each partners }}
+              <tr>
+                <td>{{this._id}}</td>
+                <td>{{this.name}}</td>
+                <td>
+                  <img src="assets/uploads/{{this.photo}}" width="50" height="50" />
+                </td>
+                <td class="">
+                  <a href="/admin/partner/{{this._id}}" class="btn  btn-block btn-flat">
+                    <i class="fa fa-edit text-primary fa-2x"></i>
+                  </a>
+                </td>
+                <td>
+                  <form method="POST" action="/admin/partner/{{this._id}}/remove">
+                    <button style="background-color: transparent; border: none;" type="submit"
+                      class="btn  btn-block btn-flat">
+                      <i class="fa fa-trash text-danger fa-2x"></i>
+                    </button>
+                  </form>
+                </td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+</section>

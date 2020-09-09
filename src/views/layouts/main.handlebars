@@ -15,11 +15,12 @@
 </head>
 
 <body>
+  {{> message}}
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="assets/images/promo.png" alt="" style="width: 80px;">
+          <img src="assets/images/promo-removebg-preview.png" alt="" style="width: 80px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +35,26 @@
             <li class="nav-item {{#if activeAbout }} active {{/if}}">
               <a class="nav-link" href="/sobre-nos">Quem Somos</a>
             </li>
+            <li class="nav-item {{#if activeServices }} active {{/if}}">
+              <a class="nav-link" href="/areas-de-consultorias">Serviços</a>
+            </li>
 
-            <li class="nav-item {{#if activeServices }} active {{/if}}"><a class="nav-link"
-                href="/areas-de-consultorias">Serviços</a></li>
+            {{!-- <li class="nav-item {{#if activeServices }} active {{/if}}"><a class="nav-link"
+                href="/areas-de-consultorias">Serviços</a></li> --}}
+
+
             <div class="dropdown">
+              <a class="nav-link   {{#if activeBrand }} active {{/if}}dropdown-toggle" href="/" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Representação
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/marcas">Marcas</a>
+                <!--<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Legislação</a>-->
+              </div>
+            </div>
+            {{!-- <div class="dropdown">
               <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 Publicações
@@ -47,7 +64,7 @@
                 <!--<div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Legislação</a>-->
               </div>
-            </div>
+            </div> --}}
             <li class="nav-item {{#if activePortfolio }} active {{/if}}"><a class="nav-link"
                 href="/portfolio">Notícias</a></li>
             <li class="nav-item {{#if activeContacts }} active {{/if}}">
@@ -73,14 +90,20 @@
 
   {{{body}}}
 
+  <style>
+    footer a {
+      font-weight: 700;
+    }
+  </style>
+
   <footer>
     <div class="container">
-      <p>  
-        Links Úteis : <a href="https://www.bna.ao/" target="_blank"> BNA </a> 
-                        |
-                     <a href="https://igape.minfin.gov.ao/PortalIGAPE/#!/" target="_blank"> IGAPE </a>
-                        | 
-                     <a href="http://www.agt.minfin.gov.ao/PortalAGT/#!/" target="_blank"> AGT </a> <br>
+      <p>
+        Links Úteis : <a href="https://www.bna.ao/" target="_blank"> BNA </a>
+        |
+        <a href="https://igape.minfin.gov.ao/PortalIGAPE/#!/" target="_blank"> IGAPE </a>
+        |
+        <a href="http://www.agt.minfin.gov.ao/PortalAGT/#!/" target="_blank"> AGT </a> <br>
         ©AGCC.<span class="year"></span> – Todos os Direitos Reservados.
       </p>
     </div>
@@ -100,6 +123,8 @@
   <script>
     document.querySelector('.year').innerHTML = `${new Date().getFullYear()}`
   </script>
+
+
 </body>
 
 </html>

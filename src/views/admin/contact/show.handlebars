@@ -1,0 +1,37 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-text-width"></i>
+          <h3 class="box-title">{{contact.name}}</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="mailbox-read-info">
+            <h3>{{contact.subject}}</h3>
+            <h5>From: {{contact.email}}
+              <span class="mailbox-read-time pull-right">
+                <span id="time" hidden>{{contact.createdAt}}</span>
+                <script>
+                  const time = document.querySelector("#time")
+                  const data = new Date(time.innerHTML).toUTCString()
+                  document.write(data)
+                </script>
+
+              </span></h5>
+          </div>
+          <div class="mailbox-read-message">
+            <p> {{contact.message}}</p>
+          </div>
+
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+</section>
