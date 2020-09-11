@@ -1,8 +1,53 @@
 {
-  "teste": "TESE",
+  "lang": "EN",
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "representation": "Representation",
+    "brand": "Brand",
+    "news": "News",
+    "contact": "Contacts",
+    "langName1": "Portuguese",
+    "langName2": "English"
+  },
   "home": {
-    "title": "Book shop",
-    "total": "There are {{counter}} books in the list",
-    "buttonText": "Refresh button"
+    "banner_session": [],
+    "service_session_title": "Our services",
+    "partner_session_title": "Our partners",
+    "certification_session_title": "Certifications"
+  },
+  "about": {
+    "session1": {
+      "title": "WHO WE ARE",
+      "description": "<p> <strong> AGCC CONSULTORIA LDA </strong>, is a business consultancy company, created in 2015, which offers support to companies, and which unites a team of differentiated and qualified professionals, to meet the needs of current management consulting needs of its clients. Aware of the challenges faced by companies today to enhance their human resources and increase financial resources, AGCC CONSULTORIA LDA offers specialized services with the objective of helping companies to reduce costs, increase profits and create growth strategies, for the continuous improvement of short, medium and long term management models. </p><p> <strong> AGCC CONSULTORIA LDA </strong> has a portfolio that makes it specialized in providing services for companies, foundations, associations and individuals with headquarters in Angola and abroad.The proven experience in consultancy has been accompanied with new services in support small, medium and large companies in the field of private investment, auditing and general trade. </p> <p> <strong> AGCC CONSULTORIA LDA </strong> has as short-term strategic objectives to assume a privileged position in the field of investment throughout the national territory, becoming a solid, creative and profitable company; in the medium term, take a privileged position in the field of private investment throughout the national territory and in the long term be a reference among national companies for the volume of business and investments in companies in international markets. </p> "
+    },
+    "session2": {
+      "title": "MISSION, VISION AND VALUES",
+      "item1": {
+        "title": "MISSION",
+        "description": "Provide excellent services in the field of corporate governance and business intelligence presenting itself as a credible partner in the field of outsourcing"
+      },
+      "item2": {
+        "title": "VISION",
+        "description": "To be a reference in a consultancy company for innovative business projects, serving as a platform for the integration of investment in public and private projects."
+      },
+      "item3": {
+        "title": "VALUES",
+        "description": "Commitment to business success, through the association between customer satisfaction, efficiency and the adoption of good practices"
+      }
+    },
+    "session3": {
+      "title": "WHO WE ARE",
+      "description": "<p> <strong> AGCC CONSULTORIA LDA </strong>, is a business consultancy company, created in 2015, which offers support to companies, and which unites a team of differentiated and qualified professionals, to meet the needs of current management consulting needs of its clients. Aware of the challenges faced by companies today to enhance their human resources and increase financial resources, AGCC CONSULTORIA LDA offers specialized services with the objective of helping companies to reduce costs, increase profits and create growth strategies, for the continuous improvement of short, medium and long term management models. </p><p> <strong> AGCC CONSULTORIA LDA </strong> has a portfolio that makes it specialized in providing services for companies, foundations, associations and individuals with headquarters in Angola and abroad.The proven experience in consultancy has been accompanied with new services in support small, medium and large companies in the field of private investment, auditing and general trade. </p> <p> <strong> AGCC CONSULTORIA LDA </strong> has as short-term strategic objectives to assume a privileged position in the field of investment throughout the national territory, becoming a solid, creative and profitable company; in the medium term, take a privileged position in the field of private investment throughout the national territory and in the long term be a reference among national companies for the volume of business and investments in companies in international markets. </p> "
+    }
+  },
+  "services": {},
+  "brand": {},
+  "news": {},
+  "contacts": {},
+  "footer": {
+    "links": "Useful links:",
+    "copyright": "All rights reserved."
   }
 }

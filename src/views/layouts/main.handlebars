@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item {{#if activeHome }} active {{/if}}">
-              <a class="nav-link" href="/">Home</a></li>
+              <a class="nav-link" href="/">{{lang.header.home}}</a></li>
 
             <li class="nav-item {{#if activeAbout }} active {{/if}}">
-              <a class="nav-link" href="/sobre-nos">Quem Somos</a>
+              <a class="nav-link" href="/sobre-nos">{{lang.header.about}}</a>
             </li>
             <li class="nav-item {{#if activeServices }} active {{/if}}">
-              <a class="nav-link" href="/areas-de-consultorias">Serviços</a>
+              <a class="nav-link" href="/areas-de-consultorias">{{lang.header.services}}</a>
             </li>
 
             {{!-- <li class="nav-item {{#if activeServices }} active {{/if}}"><a class="nav-link"
@@ -46,10 +46,10 @@
             <div class="dropdown">
               <a class="nav-link   {{#if activeBrand }} active {{/if}}dropdown-toggle" href="/" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Representação
+                {{lang.header.representation}}
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/marcas">Marcas</a>
+                <a class="dropdown-item" href="/marcas">{{lang.header.brand}}</a>
                 <!--<div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Legislação</a>-->
               </div>
@@ -66,20 +66,20 @@
               </div>
             </div> --}}
             <li class="nav-item {{#if activePortfolio }} active {{/if}}"><a class="nav-link"
-                href="/portfolio">Notícias</a></li>
+                href="/portfolio">{{lang.header.news}}</a></li>
             <li class="nav-item {{#if activeContacts }} active {{/if}}">
 
-              <a class="nav-link" href="/contactos">Contactos</a></li>
+              <a class="nav-link" href="/contactos">{{lang.header.contact}}</a></li>
 
             <div class="dropdown">
               <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <i class="fas fa-languag text-red" style="vertical-align: middle; font-size: 14px">PT</i>
+                <i class="fas fa-languag text-red" style="vertical-align: middle; font-size: 14px">{{lang.lang}}</i>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Português</a>
+                <a class="dropdown-item" href="/pt">{{lang.header.langName1}}</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Inglês</a>
+                <a class="dropdown-item" href="/en">{{lang.header.langName2}}</a>
               </div>
             </div>
           </ul>
@@ -99,12 +99,12 @@
   <footer>
     <div class="container">
       <p>
-        Links Úteis : <a href="https://www.bna.ao/" target="_blank"> BNA </a>
+        {{lang.footer.links}} <a href="https://www.bna.ao/" target="_blank"> BNA </a>
         |
         <a href="https://igape.minfin.gov.ao/PortalIGAPE/#!/" target="_blank"> IGAPE </a>
         |
         <a href="http://www.agt.minfin.gov.ao/PortalAGT/#!/" target="_blank"> AGT </a> <br>
-        ©AGCC.<span class="year"></span> – Todos os Direitos Reservados.
+        ©AGCC.<span class="year"></span> – {{lang.footer.copyright}}
       </p>
     </div>
   </footer>

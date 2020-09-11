@@ -25,50 +25,11 @@
   </a>
 </div>
 
-{{!-- <div id="quem-somos-home">
-      <div class="container">
-        <h1 class="text-center text-uppercase title-1">Quem Somos</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <img class="rounded-img rotate" src="/assets/images/foto1.jpg  " alt="" style="width: 550px; height: 300px;">
-          </div>
-          <div class="col-md-6">
-            <p class="">
-              <strong>AGCC CONSULTORIA LDA</strong>, é uma empresa de consultoria empresarial, que oferece apoio às
-              empresas, e
-              que une uma equipa
-              de profissionais diferenciados e capacitados, para atender às actuais necessidades de consultoria em gestão
-              dos
-              seus
-              clientes.
-            </p>
-
-            <p class="">Conscientes dos desafios enfrentados pelas empresas nos dias de hoje para potencializar os seus
-              recursos humanos e
-              incrementar os recursos financeiros, a <strong>AGCC CONSULTORIA LDA</strong> oferece serviços especializados
-              tendo
-              como objectivo
-              auxiliar as empresas a reduzir custos, aumentar os lucros e criar estratégias de crescimento, para a melhoria
-              contínua dos modelos de gestão de médio e longo prazo.</p>
-
-            <a href="/sobre-nos" class="read-more">Leia mais...</a>
-          </div>
-        </div>
-      </div>
-    </div> --}}
-
-<style>
-  .box-specs {
-    display: flex;
-  }
-</style>
-
 <div id="areas-home">
   <div class="container">
-
     <div class="row">
       <div class="col-lg-12  p-4">
-        <h2>Nossos Serviços</h2>
+        <h2>{{lang.home.service_session_title}}</h2>
         <p class="text-center">
           {{office.service}}
         </p>
@@ -86,32 +47,13 @@
           </div>
           {{/each}}
         </div>
-
       </div>
-
     </div>
   </div>
-
-
-  {{!-- <div class="link-in">
-      <a href="/portfolio">Conheça o nosso Porfolio &rarr;</a>
-    </div> --}}
 </div>
-</div>
-
-{{!-- <div id="team-home">
-  <div class="container">
-    <h2>Conheça a nossa equipa de trabalho</h2>
-    <p class="text-center">
-      AGCC CONSULTORIA LDA desenvolve o seu modelo de consultoria tendo como objectivo principal a melhoria dos
-      processos de gestão, visando maior produtividade e competitividade para a empresa, prestando serviços nas
-      seguintes áreas
-    </p>
-  </div>
-</div> --}}
 
 <div class="parceiros">
-  <h2>Nossos Parceiros</h2>
+  <h2>{{lang.home.partner_session_title}}</h2>
   <div class="container">
     <div class="all-partners">
       {{#each partners}}
@@ -128,12 +70,12 @@
 <br>
 
 <div class="parceiros">
-  <h2>Certificações</h2>
+  <h2>{{lang.home.certification_session_title}}</h2>
   <div class="container">
     <div class="all-partners">
       {{#each certifications}}
       <div class="parceiro">
-        <a href="">
+        <a href="#!">
           <img src="assets/uploads/{{this.photo}}" height="100" alt="{{this.name}}">
         </a>
       </div>
@@ -141,65 +83,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-<!--<div id="contact-home">
-  <div class="container">
-    <h2 class="text-left pl-3">Contactos</h2>
-    <div class="columns">
-      <div class="col">
-        <form action="">
-          <div>
-            <label for="">Nome Completo</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Assunto</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Nº de Telefone</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label for="">Mensagem</label>
-            <textarea class="form-control" rows="8"></textarea>
-          </div>
-
-          <div class="action">
-            <button class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
-      </div>
-      <div class="col">
-        <span>
-          <i class="far fa-calendar-alt"></i>
-          Segunda a Sexta-Feira – das 07h30 as 15h30
-        </span>
-        <span>
-          <i class="fas fa-map-marker"></i>
-          (Sede) Rua Kwame Nkrumah n.o 3/5, Maianga, Luanda
-        </span>
-        <span class="flex-normal">
-          <i class="fas fa-building"></i>
-          <span>(Escritório) Condomínio do Vale dos Pássaros, Prédio Tucano Apt. n.º 51, R/C
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talatona, Luanda</span>
-        </span>
-        <span>
-          <i class="fas fa-phone-alt"></i>
-          (Call center) 222734178 | 928268366
-        </span>
-        <span>
-          <i class="fas fa-envelope"></i>
-          E-mail: geral@agcc.co.ao
-        </span>
-      </div>
-    </div>
-  </div>
-</div>-->

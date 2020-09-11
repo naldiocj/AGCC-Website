@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
@@ -335,4 +335,7 @@ footer {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+.box-specs {
+  display: flex;
 }

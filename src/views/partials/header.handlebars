@@ -17,46 +17,11 @@
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
                 <li class="dropdown messages-menu">
-                    {{!-- <style>
-                        .count {
 
-                            background-color: transparent;
-                            border: none;
-                            color: #fff;
-                            outline: none;
-
-                        }
-
-                        .main-count {
-                            height: 50px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 5px;
-                        }
-
-
-                        .main-count:hover {
-                            background-color: rgba(0, 0, 0, 0.1)
-                        }
-                    </style>
-                    <form action="/admin/notify/count" method="post">
-                        <div class="main-count">
-                            <button class="count" type="submit">
-                                <i class="fa fa-envelope-o"></i>
-                                <sup>
-                                    <span class="label label-success">{{count}}</span>
-                                </sup>
-                            </button>
-                        </div>
-
-                    </form> --}}
                     <a href="/admin/contacts">
                         <i class="fa fa-envelope-o"></i>
                         <span class="label label-success">{{count}}</span>
                     </a>
-
-
 
                 </li>
                 <!-- User Account: style can be found in dropdown.less -->
@@ -72,7 +37,6 @@
 
                             <p>
                                 Administrador: {{#if user.admin}} sim {{else}} não{{/if}}
-
                             </p>
                         </li>
 
@@ -88,7 +52,6 @@
                     </ul>
                 </li>
                 <!-- Control Sidebar Toggle Button -->
-
             </ul>
         </div>
     </nav>

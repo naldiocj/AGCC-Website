@@ -1,7 +1,49 @@
 {
+  "lang": "PT",
+  "header": {
+    "home": "Ínicio",
+    "about": "Quem somos",
+    "services": "Serviços",
+    "representation": "Representação",
+    "brand": "Marcas",
+    "news": "Notícias",
+    "contact": "Contactos",
+    "langName1": "Português",
+    "langName2": "Inglês"
+  },
   "home": {
-    "title": "Book shop",
-    "total": "There are {{counter}} books in the list",
-    "buttonText": "Refresh button"
+    "banner_session": [],
+    "service_session_title": "Nossos Serviços",
+    "partner_session_title": "Nossos Parceiros",
+    "certification_session_title": "Certificações"
+  },
+  "about": {
+    "session1": {
+      "title": "QUEM SOMOS",
+      "description": "<p> <strong>AGCC CONSULTORIA LDA</strong>, é uma empresa de consultoria empresarial, criada em 2015, que oferece apoio às empresas, e que une uma equipa de profissionais diferenciados e capacitados, para atender às actuais necessidades de consultoria em gestão dos seus clientes.Conscientes dos desaﬁos enfrentados pelas empresas nos dias de hoje para potencializar os seus recursos humanos e incrementar os recursos financeiros, a AGCC CONSULTORIA LDA oferece serviços especializados tendo como objectivo auxiliar as empresas a reduzir custos, aumentar os lucros e criar estratégias de crescimento, para a melhoria contínua dos modelos de gestão de curto, médio e longo prazo. </p><p><strong>AGCC CONSULTORIA LDA</strong>possui um portifólio que a torna especializada na prestação de serviços para empresas, fundações, associações e particulares com sede em Angola e no estrangeiro. A experiência comprovada em matéria de consultoria tem sido acompanhada com novos serviços no apoio de pequenas, médias e grandes empresas no domínio do investimento privado, auditoria e comércio geral.</p> <p><strong>AGCC CONSULTORIA LDA</strong>  tem como objectivos estratégicos de curto prazo assumir uma posição privilegiada no domínio do investimento privado em todo o território nacional, constituindo-se como empresa sólida, criativa e lucrativa; a médio prazo, assumir posição privilegiada no domínio do investimento privado em todo o território nacional e a longo prazo ser referência entre as empresas nacionais pelo volume de negócios e investimentos em empresas em mercados internacionais.</p>"
+    },
+    "session2": {
+      "title": "MISSÃO, VISÃO E VALORES",
+      "item1": {
+        "title": "MISSÃO",
+        "description": "Prestar serviços de excelência no domínio da corporate governance e business intelligence apresentando-se como parceiro credível no domínio do outsourcing"
+      },
+      "item2": {
+        "title": "VISÃO",
+        "description": "Constituir-se numa referência de empresa de consultoria de projectos empresariais inovadores, servindo de plataforma para a integração de investimento em projectos públicos e privados"
+      },
+      "item3": {
+        "title": "VALORES",
+        "description": "Compromisso com o sucesso empresarial, através da associação entre a satisfação do cliente, a eficiência e a adopção de boas práticas"
+      }
+    }
+  },
+  "services": {},
+  "brand": {},
+  "news": {},
+  "contacts": {},
+  "footer": {
+    "links": "Links úteis:",
+    "copyright": "Todos os Direitos Reservados."
   }
 }
