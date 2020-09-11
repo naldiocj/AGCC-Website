@@ -1,8 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const cors = require("cors");
-const envConfig = require("./.env");
 const mongooose = require("mongoose");
 const Handlebars = require("handlebars");
 const passport = require("passport");
@@ -19,7 +19,9 @@ const app = express();
 // Passport Config
 require("./config/passport")(passport);
 
-mongooose.connect(envConfig.db, {
+console.log(process.env.MONGO_URL);
+
+mongooose.connect(process.env.MONGO_URL, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -46,7 +48,7 @@ require("./config/static")(app);
 
 app.use(
   session({
-    secret: envConfig.secret,
+    secret: process.env.SECRET,
     resave: true,
     saveUninitialized: true,
   })
@@ -67,8 +69,8 @@ app.use(function (req, res, next) {
 });
 
 app.use(async (req, res, next) => {
-  const count = await Notify.findOne({ _id: "5f5905fd0fcee36b84726cb1" });
-  req.count = count.count;
+  // const count = await Notify.findOne({ _id: "5f5905fd0fcee36b84726cb1" });
+  // req.count = count.count;
 
   next();
 });
