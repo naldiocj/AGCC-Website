@@ -1,3 +1,5 @@
 node_modules
 nbproject/private/
 yarn-error.log
+.DS_Store
+package-look.json
