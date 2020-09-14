@@ -38,10 +38,39 @@
       }
     }
   },
-  "services": {},
-  "brand": {},
-  "news": {},
-  "contacts": {},
+  "services": {
+    "session4": {
+      "title": "NOSSOS SERVIÇOS"
+    }
+  },
+  "brand": {
+    "session5": {
+      "title": "MARCAS"
+    }
+  },
+  "news": {
+    "session6": {
+      "title": "NOTÍCIAS",
+      "data": []
+    }
+  },
+  "contacts": {
+    "session7": {
+      "title": "CONTACTOS",
+      "item1": {
+        "fullName": "Nome completo",
+        "subject": "Assunto",
+        "phoneNumber": "Nº de Telefone",
+        "message": "Mensagem",
+        "send": "Enviar"
+      },
+      "item2": {
+        "serviceTime": "Segunda a Sexta-Feira – das 07h30 as 15h30",
+        "location": "Rua Kwame Nkrumah n.º 3/5, Maianga, Luanda",
+        "office": " Condomínio do Vale dos Pássaros, Prédio Tucano Apartamento n.º 51, R/C Município de Talatona Luanda- Angola"
+      }
+    }
+  },
   "footer": {
     "links": "Links úteis:",
     "copyright": "Todos os Direitos Reservados."

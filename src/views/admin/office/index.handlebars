@@ -17,7 +17,7 @@
         <!-- /.box-header -->
         <div class="box-body">
           <h4>Office</h4>
-          <form role="form" method="POST" action="/admin/office">
+          <form role="form" method="POST" action="/admin/office/{{office._id}}">
             <div class="box-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Nossos Serviços *</label>
@@ -55,7 +55,7 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">E-mail *</label>
-                <input type="email" value="{{office.email}}" name="email" class="form-control" id="exampleInputEmail1">
+                <input type="text" value="{{office.email}}" name="email" class="form-control" id="exampleInputEmail1">
               </div>
 
 

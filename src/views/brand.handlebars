@@ -1,23 +1,27 @@
-<div id="areas-home">
-  <div class="container">
-    <h2>Marcas</h2>
+<div class="container">
+  <div class="row mt-5 text-center">
+    <div class="col-12">
+      <h2>{{{lang.brand.session5.title}}}</h2>
+    </div>
+  </div>
 
-    <div class="portfolios">
 
-      {{#each brands}}
-      <div class="portfolio">
+  <div class="row text-center">
+    {{#each brands}}
+    <div class="col-lg-4 col-sm-6 col-md-6 ">
+      <div class="m-3">
         <a href="/product/{{this._id}}">
-          <img src="assets/uploads/{{this.photo}}" width="350" height="200" alt="Avatar" />
-        </a>
+          <img src="assets/uploads/{{this.photo}}" width="100%" height="200" alt="Avatar" />
+        </a><br />
         <span style="font-weight: bold;font-size: 18px;">{{this.name}}</span>
-        <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt aliquam quasi expedita? Eum enim
+      </div>
+      <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt aliquam quasi expedita? Eum enim
           placeat ipsum cupiditate ipsa sed?</p>
         <a href="#" class="btn read-more">Leia mais...</a href="#">-->
-      </div>
-      {{/each }}
     </div>
-
+    {{/each }}
 
   </div>
-</div>
+
+
 </div>

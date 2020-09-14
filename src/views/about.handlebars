@@ -1,18 +1,18 @@
 <div id="quem-somos-home">
   <div class="container">
     <h1 class="text-center text-uppercase title-1">{{lang.about.session1.title}}</h1>
-    <div class="row flex-center">
-      <div class="col-md-12 col-sm-12" style="">
-        <img class="rounded-img rotate" src="assets/uploads/{{agcc.photo}}" alt=""
+    <div class="row justify-content-center flex-center">
+      <div class="col-md-12 col-sm-12 col-lg-6" style="">
+        <img class="rounded-img rotate img-fluid" src="assets/uploads/{{agcc.photo}}" alt=""
           style="width: 550px; height: 440px;float:left;margin-right:10px">
-
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-6" style="">
         {{{lang.about.session1.description}}}
 
       </div>
     </div>
   </div>
 </div>
-
 <style>
   .cards {
     display: flex;
@@ -21,33 +21,33 @@
 <div id="mission">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <h2 class="text-center title-2">{{{lang.about.session2.title}}}</h2>
       </div>
     </div>
     <div class="cards">
-      <div class="row bg-light">
-        <div class="col-12 ">
+      <div class="row ">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6 ">
           <div class="card-box">
-            <h3>Missão</h3>
+            <h3>{{{lang.about.session2.item1.title}}}</h3>
             <p class="text-center">
-              {{agcc.mission}}
+              {{{lang.about.session2.item1.description}}}
             </p>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6">
           <div class="card-box">
-            <h3>Visão</h3>
+            <h3>{{{lang.about.session2.item2.title}}}</h3>
             <p class="text-center">
-              {{agcc.eyesight}}
+              {{{lang.about.session2.item2.description}}}
             </p>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6">
           <div class="card-box">
-            <h3>Valores</h3>
+            <h3>{{{lang.about.session2.item3.title}}}</h3>
             <p class="text-center">
-              {{agcc.values}}
+              {{{lang.about.session2.item3.description}}}
             </p>
           </div>
         </div>
@@ -58,6 +58,10 @@
   </div>
 </div>
 </div>
+
+
+
+
 
 {{!-- <div id="objectivs">
   <div class="container">
@@ -190,22 +194,35 @@
 <div id="team">
   <div class="container">
     <div class="box-center">
-      <h2 class="text-center text-uppercase title-1">Equipa de Trabalho</h2>
+      <h2 class="text-center text-uppercase title-1"> {{{lang.about.session3.title}}}</h2>
       <p class="text-center">
         {{office.team}}
       </p>
     </div>
 
+    <style>
+      .members {
+        display: flex;
+        padding: 20px;
+      }
+    </style>
     <div class="members" style="background-color: #333;">
-      {{#each teams}}
-      <div class="member">
-        <img src="assets/uploads/{{this.photo}}" alt="Avatar">
-        <span>Nome: {{this.name}}</span>
-        <span><strong>{{this.role}}</span></strong>
-        <span>{{this.degree}}</span>
-        <span>Email: {{this.email}}</span>
+
+      <div class="row d-flex flex-wrap justify-content-center">
+        {{#each teams}}
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6">
+          <div class="member">
+            <img src="assets/uploads/{{this.photo}}" alt="Avatar">
+            <span>Nome: {{this.name}}</span>
+            <span><strong>{{this.role}}</span></strong>
+            <span>{{this.degree}}</span>
+            <span>Email: {{this.email}}</span>
+          </div>
+        </div>
+
+        {{/each}}
       </div>
-      {{/each}}
+
 
     </div>
   </div>

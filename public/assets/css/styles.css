@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
@@ -129,7 +129,7 @@ h2 {
 
 /* Home Page */
 #quem-somos-home {
-  padding: 120px;
+  padding-top: 120px;
   background-color: #333;
   color: #fff;
 }
@@ -199,7 +199,7 @@ h2 {
 #team {
   background-color: #eee;
   color: #333;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .members {
@@ -207,6 +207,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   background-color: #fff;
   padding: 50px 20px;
+
   border-radius: 10px;
 }
 
@@ -217,6 +218,7 @@ h2 {
   background-color: #fff;
   align-items: center;
   margin-bottom: 10px;
+
   margin-right: 10px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -232,7 +234,7 @@ h2 {
 
 /* About Page */
 #mission {
-  padding: 100px;
+  padding-top: 100px;
 }
 
 #objectivs {
@@ -268,9 +270,9 @@ h2 {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 50px;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  padding-top: 50px;
 }
 
 .cards .card-box {

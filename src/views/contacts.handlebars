@@ -7,58 +7,60 @@
 <div id="contact-home" class="pt-30">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h2 class="text-left pl-3">Contactos</h2>
-        <div class="columns">
-          <div class="col">
-            <form action="/admin/contacts" method="POST">
-              <div>
-                <label for="">Nome Completo</label>
-                <input type="text" name="name" placeholder="Nome Completo" class="form-control">
-              </div>
-              <div>
-                <label for="">E-mail</label>
-                <input type="email" name="email" placeholder="E-mail" class="form-control">
-              </div>
-              <div>
-                <label for="">Assunto</label>
-                <input type="text" placeholder="Assunto" name="subject" class="form-control">
-              </div>
-              <div>
-                <label for="">Nº de Telefone</label>
-                <input type="tel" name="tel" placeholder="Telefone" class="form-control">
-              </div>
-              <div>
-                <label for="">Mensagem</label>
-                <textarea name="message" class="form-control" rows="8" maxlength="432"></textarea>
-              </div>
-
-              <div class="action">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <h2 class="text-left pl-3">{{{lang.contacts.session7.title}}}</h2>
+        <form action="/admin/contacts" method="POST">
+          <div>
+            <label for="">{{{lang.contacts.session7.item1.fullName}}}</label>
+            <input type="text" name="name" placeholder="{{{lang.contacts.session7.item1.fullName}}}"
+              class="form-control">
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="col">
-            <span>
-              <i class="far fa-calendar-alt"></i>{{office.serviceTime}}
-            </span>
-            <span>
-              <i class="fas fa-map-marker"></i>{{office.location}}
-            </span>
-            <span class="flex-normal">
-              <i class="fas fa-building"> </i>
-              <span>{{office.office}}
-              </span>
-            </span>
-            <span><i class="fas fa-phone-alt"></i>{{office.tel}}
-            </span><span><i class="fas fa-envelope"></i>E-mail: {{office.email}}</span>
-
+          <div>
+            <label for="">E-mail</label>
+            <input type="email" name="email" placeholder="E-mail" class="form-control">
           </div>
-        </div>
+          <div>
+            <label for="">{{{lang.contacts.session7.item1.subject}}}</label>
+            <input type="text" placeholder="{{{lang.contacts.session7.item1.subject}}}" name="subject"
+              class="form-control">
+          </div>
+          <div>
+            <label for="">{{{lang.contacts.session7.item1.phoneNumber}}}</label>
+            <input type="tel" name="tel" placeholder="{{{lang.contacts.session7.item1.phoneNumber}}}"
+              class="form-control">
+          </div>
+          <div>
+            <label for="">{{{lang.contacts.session7.item1.message}}}</label>
+            <textarea name="{{{lang.contacts.session7.item1.message}}}" class="form-control" rows="8"
+              maxlength="432"></textarea>
+          </div>
+
+          <div class="action">
+            <button type="submit" class="btn btn-primary">{{{lang.contacts.session7.item1.send}}}</button>
+          </div>
+        </form>
 
       </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col">
+          <span>
+            <i class="far fa-calendar-alt"></i>{{{lang.contacts.session7.item2.serviceTime}}}
+          </span>
+          <span>
+            <i class="fas fa-map-marker"></i>{{{lang.contacts.session7.item2.location}}}
+          </span>
+          <span class="flex-normal">
+            <i class="fas fa-building"> </i>
+            <span>{{{lang.contacts.session7.item2.office}}}
+            </span>
+          </span>
+          <span><i class="fas fa-phone-alt"></i>{{office.tel}}
+          </span><span><i class="fas fa-envelope"></i>E-mail: {{office.email}}</span>
+
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 </div>

@@ -38,14 +38,41 @@
       }
     },
     "session3": {
-      "title": "WHO WE ARE",
-      "description": "<p> <strong> AGCC CONSULTORIA LDA </strong>, is a business consultancy company, created in 2015, which offers support to companies, and which unites a team of differentiated and qualified professionals, to meet the needs of current management consulting needs of its clients. Aware of the challenges faced by companies today to enhance their human resources and increase financial resources, AGCC CONSULTORIA LDA offers specialized services with the objective of helping companies to reduce costs, increase profits and create growth strategies, for the continuous improvement of short, medium and long term management models. </p><p> <strong> AGCC CONSULTORIA LDA </strong> has a portfolio that makes it specialized in providing services for companies, foundations, associations and individuals with headquarters in Angola and abroad.The proven experience in consultancy has been accompanied with new services in support small, medium and large companies in the field of private investment, auditing and general trade. </p> <p> <strong> AGCC CONSULTORIA LDA </strong> has as short-term strategic objectives to assume a privileged position in the field of investment throughout the national territory, becoming a solid, creative and profitable company; in the medium term, take a privileged position in the field of private investment throughout the national territory and in the long term be a reference among national companies for the volume of business and investments in companies in international markets. </p> "
+      "title": "WORK TEAM"
     }
   },
-  "services": {},
-  "brand": {},
-  "news": {},
-  "contacts": {},
+  "services": {
+    "session4": {
+      "title": "OUR SERVICES"
+    }
+  },
+  "brand": {
+    "session5": {
+      "title": "BRANDS"
+    }
+  },
+  "news": {
+    "session6": {
+      "title": "NEWS"
+    }
+  },
+  "contacts": {
+    "session7": {
+      "title": "CONTACTS",
+      "item1": {
+        "fullName": "Full name",
+        "subject": "Subject",
+        "phoneNumber": "Phone number",
+        "message": "Message",
+        "send": "Send"
+      },
+      "item2": {
+        "serviceTime": "Monday to Friday - from 7:30 am to 3:30 pm",
+        "location": "Kwame Nkrumah Street 3/5, Maianga, Luanda",
+        "office": "Condominium of the valley of birds, Building Tucano Apartment nº 51, R / C Municipality of Talatona Luanda- Angola"
+      }
+    }
+  },
   "footer": {
     "links": "Useful links:",
     "copyright": "All rights reserved."

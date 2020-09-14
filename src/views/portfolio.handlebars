@@ -1,27 +1,29 @@
 <div id="portfolio">
   <div class="container">
     <div class="box-center">
-      <h2 class="text-center text-uppercase title-1">Notícias</h2>
+      <h2 class="text-center text-uppercase title-1">{{{lang.news.session6.title}}}</h2>
       <p class="text-center">
-        AGCC CONSULTORIA LDA desenvolve o seu modelo de consultoria tendo como objectivo principal a melhoria dos
-        processos
-        de
-        gestão, visando maior produtividade e competitividade para a empresa, prestando serviços nas seguintes áreas
+        {{office.portfolio}}
       </p>
     </div>
 
-    <div class="portfolios">
 
-      {{#each data}}
-      <div class="portfolio">
-        <a href="assets/uploads/{{this.photo}}">
-          <img src="assets/uploads/{{this.photo}}" width="350" height="200" alt="Avatar" />
-        </a>
-        <span>{{this.title}}</span>
-        <p>{{this.description}}</p>
-        <a href="/portfolio/{{this._id}}" class="btn read-more">Leia mais...</a href="#">
-      </div>
-      {{/each }}
-
-    </div>
   </div>
+</div>
+
+<div class="container">
+
+  <div class="row pb-5">
+    {{#each data}}
+    <div class="col-lg-6 col-md-12 col-sm-12 pb-5">
+      <a href="assets/uploads/{{this.photo}}">
+        <img src="assets/uploads/{{this.photo}}" width="350" height="200" alt="Avatar" />
+      </a><br>
+      <span>{{this.title}}</span>
+      <p>{{this.description}}</p>
+      <a href="/portfolio/{{this._id}}" class="btn read-more">Leia mais...</a href="#">
+    </div>
+    {{/each }}
+  </div>
+
+</div>

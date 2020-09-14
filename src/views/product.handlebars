@@ -1,23 +1,20 @@
-<div id="portfolio">
-  <div class="container">
-    <div class="box-center">
-      <h2 class="text-center text-uppercase title-1">{{brand.name}}</h2>
-    </div>
-    <div class="portfolios">
-      {{#each brand.products}}
-      <div class="portfolio">
-        <a href="assets/uploads/{{this.photo}}">
-          <img src="assets/uploads/{{this.photo}}" width="350" height="200" alt="Avatar" />
-        </a>
-        <span> {{this.name}}
-
-          <sup>
-            <b style="font-size: 16px">{{this.price}} ‎AOA</b>
-          </sup>
-
-        </span>
-
-      </div>
-      {{/each }}
-    </div>
+<div class="container">
+  <div class="box-center">
+    <h2 class="text-center text-uppercase title-1">{{brand.name}}</h2>
   </div>
+  <div class="row text-center">
+    {{#each brand.products}}
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="p-4">
+        <a href="assets/uploads/{{this.photo}}">
+          <img src="assets/uploads/{{this.photo}}" class="img-fluid" width="350" height="200" alt="Avatar" />
+        </a><br />
+        <strong style="font-size: 22px;"> {{this.name}}
+          <b style="font-size: 16px">{{this.price}} ‎AOA</b>
+        </strong>
+      </div>
+    </div>
+    {{/each }}
+
+  </div>
+</div>
