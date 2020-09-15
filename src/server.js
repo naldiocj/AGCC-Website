@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 const mongooose = require("mongoose");
-const Handlebars = require("handlebars");
+// const Handlebars = require("handlebars");
 const passport = require("passport");
 const flash = require("connect-flash");
 const cookieParser = require("cookie-parser");
@@ -39,7 +39,7 @@ app.set("views", path.join(__dirname, "views"));
 app.engine(
   "handlebars",
   exphbs({
-    handlebars: allowInsecurePrototypeAccess(Handlebars),
+    // handlebars: allowInsecurePrototypeAccess(Handlebars),
     defaultView: "default",
     layoutsDir: path.join(__dirname, "views", "layouts"),
     partialsDir: path.join(__dirname, "views", "partials"),
