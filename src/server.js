@@ -71,7 +71,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(async (req, res, next) => {
-  const count = await Notify.findOne({ _id: "5f5f56506deb7741680f4fe3" });
+  const count = await Notify.findOne({ _id: "5f5905fd0fcee36b84726cb1" });
   req.count = count.count;
 
   next();

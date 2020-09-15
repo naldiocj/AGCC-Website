@@ -200,28 +200,28 @@
       </p>
     </div>
 
-    <style>
+    {{!-- <style>
       .members {
         display: flex;
         padding: 20px;
       }
-    </style>
+    </style> --}}
     <div class="members" style="background-color: #333;">
 
-      <div class="row d-flex flex-wrap justify-content-center">
-        {{#each teams}}
-        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-6">
-          <div class="member">
-            <img src="assets/uploads/{{this.photo}}" alt="Avatar">
-            <span>Nome: {{this.name}}</span>
-            <span><strong>{{this.role}}</span></strong>
-            <span>{{this.degree}}</span>
-            <span>Email: {{this.email}}</span>
-          </div>
-        </div>
+      {{!-- <div class="row d-flex flex-wrap justify-content-center"></div> --}}
+      {{#each teams}}
 
-        {{/each}}
+      <div class="member">
+        <img src="assets/uploads/{{this.photo}}" alt="Avatar">
+        <span>Nome: {{this.name}}</span>
+        <span><strong>{{this.role}}</span></strong>
+        <span>{{this.degree}}</span>
+        <span>Email: {{this.email}}</span>
       </div>
+
+
+      {{/each}}
+
 
 
     </div>

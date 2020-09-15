@@ -1,15 +1,15 @@
-const Portfolio = require('../models/Portfolio');
-const Brand = require('../models/Brand');
-const Service = require('../models/Service');
-const Team = require('../models/Team');
-const Agcc = require('../models/Agcc');
-const Certification = require('../models/Certification');
-const Slide = require('../models/Slide');
-const Partner = require('../models/Partner');
-const Office = require('../models/Office');
-const fs = require('fs');
-const path = require('path');
-const setLang = require('../utils/set_lang');
+const Portfolio = require("../models/Portfolio");
+const Brand = require("../models/Brand");
+const Service = require("../models/Service");
+const Team = require("../models/Team");
+const Agcc = require("../models/Agcc");
+const Certification = require("../models/Certification");
+const Slide = require("../models/Slide");
+const Partner = require("../models/Partner");
+const Office = require("../models/Office");
+const fs = require("fs");
+const path = require("path");
+const setLang = require("../utils/set_lang");
 
 module.exports = {
   async index(request, response) {
@@ -22,7 +22,7 @@ module.exports = {
     slides.reverse();
 
     return response.render(
-      'index',
+      "index",
       setLang(
         {
           pageName,
@@ -31,45 +31,45 @@ module.exports = {
           slides,
           office: offices[0],
           partners,
-          activeHome: pageName === '/',
+          activeHome: pageName === "/",
         },
         request
       )
     );
   },
   async aboutUs(request, response) {
-    const pageName = '/about';
+    const pageName = "/about";
     const teams = await Team.find().lean();
     const agccs = await Agcc.find().lean();
     const offices = await Office.find();
 
     return response.render(
-      'about',
+      "about",
       setLang(
         {
           pageName,
           teams,
           office: offices[0],
           agcc: agccs[0],
-          activeAbout: pageName === '/about',
+          activeAbout: pageName === "/about",
         },
         request
       )
     );
   },
   async portfolio(request, response) {
-    const pageName = '/portfolio';
+    const pageName = "/portfolio";
     const offices = await Office.find();
     await Portfolio.find({}, (err, data) => {
       if (err) new Error(err);
       return response.render(
-        'portfolio',
+        "portfolio",
         setLang(
           {
             data,
             office: offices[0],
             pageName,
-            activePortfolio: pageName === '/portfolio',
+            activePortfolio: pageName === "/portfolio",
           },
           request
         )
@@ -78,17 +78,17 @@ module.exports = {
   },
   async portfolioDetail(request, response) {
     const { id } = request.params;
-    const pageName = '/portfolio/:id';
+    const pageName = "/portfolio/:id";
     if (id) {
       const data = await Portfolio.findById(id).lean();
-      if (!data) return request.flash('error_msg', 'Id Inválido');
+      if (!data) return request.flash("error_msg", "Id Inválido");
       return response.render(
-        'portfolioDetail',
+        "portfolioDetail",
         setLang(
           {
             pageName,
             data,
-            activePortfolio: pageName === '/portfolio/:id',
+            activePortfolio: pageName === "/portfolio/:id",
           },
           request
         )
@@ -96,35 +96,35 @@ module.exports = {
     }
   },
   async services(request, response) {
-    const pageName = '/services';
+    const pageName = "/services";
     const offices = await Office.find();
     const services = await Service.find().lean();
     return response.render(
-      'services',
+      "services",
       setLang(
         {
           services,
           pageName,
           office: offices[0],
-          activeServices: pageName === '/services',
+          activeServices: pageName === "/services",
         },
         request
       )
     );
   },
   async serviceDetail(request, response) {
-    const pageName = '/service/:id';
+    const pageName = "/service/:id";
     const { id } = request.params;
     if (id) {
       const service = await Service.findById(id).lean();
-      if (!service) return request.flash('error_msg', 'Id Inválido');
+      if (!service) return request.flash("error_msg", "Id Inválido");
       return response.render(
-        'serviceDetail',
+        "serviceDetail",
         setLang(
           {
             service,
             pageName,
-            activeBrand: pageName === '/service/:id',
+            activeServices: pageName === "/service/:id",
           },
           request
         )
@@ -132,49 +132,49 @@ module.exports = {
     }
 
     return response.render(
-      'services',
+      "services",
       setLang(
         {
           pageName,
-          activeServices: pageName === '/services',
+          activeServices: pageName === "/services",
         },
         request
       )
     );
   },
   async brand(request, response) {
-    const pageName = '/marcas';
+    const pageName = "/marcas";
     const brands = await Brand.find({}, (err, brands) => {
       if (err) new Error(err);
     })
       .lean()
-      .populate('products', 'name');
+      .populate("products", "name");
 
     return response.render(
-      'brand',
+      "brand",
       setLang(
         {
           pageName,
           brands,
-          activeBrand: pageName === '/marcas',
+          activeBrand: pageName === "/marcas",
         },
         request
       )
     );
   },
   async product(request, response) {
-    const pageName = '/marcas';
+    const pageName = "/marcas";
     const { id } = request.params;
     if (id) {
-      const brand = await Brand.findById(id).lean().populate('products');
-      if (!brand) return request.flash('error_msg', 'Id Inválido');
+      const brand = await Brand.findById(id).lean().populate("products");
+      if (!brand) return request.flash("error_msg", "Id Inválido");
       return response.render(
-        'product',
+        "product",
         setLang(
           {
             brand,
             pageName,
-            activeBrand: pageName === '/marcas',
+            activeBrand: pageName === "/marcas",
           },
           request
         )
@@ -182,29 +182,29 @@ module.exports = {
     }
   },
   teams(request, response) {
-    const pageName = '/teams';
+    const pageName = "/teams";
 
     return response.render(
-      'teams',
+      "teams",
       setLang(
         {
           pageName,
-          activeTeams: pageName === '/teams',
+          activeTeams: pageName === "/teams",
         },
         request
       )
     );
   },
   async contacts(request, response) {
-    const pageName = '/contacts';
+    const pageName = "/contacts";
     const offices = await Office.find();
     return response.render(
-      'contacts',
+      "contacts",
       setLang(
         {
           pageName,
           office: offices[0],
-          activeContacts: pageName === '/contacts',
+          activeContacts: pageName === "/contacts",
         },
         request
       )

@@ -36,17 +36,12 @@
                   <td>
                   <td class="mailbox-star"><a href="#"><i
                         class="fa {{#if this.activo}}fa-star{{else}}fa-star-o{{/if}} "></i></a></td>
-                  <td class="mailbox-name"><a href="read-mail.html">{{this.name}}</a></td>
+                  <td class="mailbox-name"><a href="/admin/contact/{{this._id}}">{{this.name}}</a></td>
                   <td class="mailbox-subject"><b>{{this.subject}}</b> - {{this.message}}
                   </td>
                   <td class="mailbox-date">
                     {{this.createdAt}}
 
-                  </td>
-                  <td class="mailbox-attachment">
-                    <a href="/admin/contact/{{this._id}}">
-                      <i class="fa fa-eye size text-primary"></i>
-                    </a>
                   </td>
                   <td class="mailbox-date">
                     <form method="POST" action="/admin/contact/{{this._id}}/remove">

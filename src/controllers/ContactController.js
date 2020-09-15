@@ -33,7 +33,7 @@ module.exports = {
         let count = null;
         if (contact.activo) {
           let counts = await Notify.findOne({
-            _id: "5f57b11cc2df51667c009ef2",
+            _id: "5f5905fd0fcee36b84726cb1",
           });
           counts.count -= 1;
           counts.save();
