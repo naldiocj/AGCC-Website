@@ -41,7 +41,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "request": "2.88.0",
-    "sharp": "^0.26.0",
+    "sharp": "^0.30.5",
     "socket.io": "^2.3.0",
     "uuidv4": "5.0.1"
   },
